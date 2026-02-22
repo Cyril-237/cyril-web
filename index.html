@@ -1,420 +1,429 @@
 <!DOCTYPE html>
+<html lang="de">
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
    <meta charset="utf-8">
-	<title>Cyril Silapa</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+   <title>Cyril Silapa | Computer Science Student</title>
+   <meta name="description" content="Cyril Silapa - Computer Science Student at Darmstadt University of Applied Sciences. Full-stack development, IT Security, Web Technologies.">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/neon-portfolio.css">
+   <link rel="shortcut icon" href="favicon.png">
 </head>
-
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+   <a href="#about" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
 
-      <nav id="nav-wrap">
+   <!-- Navigation -->
+   <nav class="nav" id="nav">
+      <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+      <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+      <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+      <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+      <a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switcher">
+         <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+         <span class="lang-divider">|</span>
+         <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <button class="nav-toggle" aria-label="Menu" id="navToggle">
+         <span></span><span></span><span></span>
+      </button>
+   </nav>
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">Über mich</a></li>
-	         <li><a class="smoothscroll" href="#resume">Bildung</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
-            <li><a class="smoothscroll" href="#contact">Kontakt</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Ich bin Cyril Silapa.</h1>
-            <h3>Ich bin Student der Informatik und begeistere mich für neue Technologien und Programmierung.
-                Beginnen Sie zu scrollen und erfahren Sie mehr <a class="smoothscroll" href="#about">
-                  über mich
-               </a>.
-            </h3>
-            <hr/>
-            <ul class="social">
-                <li><a href="https://github.com/Cyril-237"><i class="fa fa-github"></i></a></li>
-            </ul>
+   <!-- Hero -->
+   <header id="home" class="hero">
+      <div class="hero-bg">
+         <div class="grid-overlay"></div>
+         <svg class="hero-graphic" viewBox="0 0 400 400" aria-hidden="true">
+            <defs>
+               <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#00f5ff"/>
+                  <stop offset="100%" style="stop-color:#b14aed"/>
+               </linearGradient>
+            </defs>
+            <circle cx="200" cy="200" r="180" fill="none" stroke="url(#grad1)" stroke-width="1" opacity="0.2"/>
+            <circle cx="200" cy="200" r="140" fill="none" stroke="url(#grad1)" stroke-width="0.5" opacity="0.15"/>
+            <path d="M200 20 L200 380 M20 200 L380 200" stroke="url(#grad1)" stroke-width="0.5" opacity="0.1"/>
+            <polygon points="200,80 230,180 320,200 230,220 200,320 170,220 80,200 170,180" fill="none" stroke="#00f5ff" stroke-width="1" opacity="0.3"/>
+         </svg>
+      </div>
+      <div class="hero-content">
+         <p class="hero-label" data-i18n="hero.label">Computer Science Student</p>
+         <h1 class="hero-title">Cyril Silapa</h1>
+         <p class="hero-desc" data-i18n="hero.desc">Passionate about new technologies and software development. Currently studying at Darmstadt University of Applied Sciences.</p>
+         <div class="hero-cta">
+            <a href="#about" class="btn btn-neon" data-i18n="hero.cta">Learn more</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="hero.contact">Get in touch</a>
+         </div>
+         <div class="hero-social">
+            <a href="https://github.com/Cyril-237" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a>
          </div>
       </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+         <span></span>
+      </a>
+   </header>
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="two columns">
-
-            <img class="profile-pic"  src="images/pp.jpg" alt="" />
-
+   <!-- About -->
+   <section id="about" class="section">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-tag" data-i18n="about.tag">01. About</span>
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
          </div>
-
-         <div class="ten columns main-col">
-
-            <h2>Über mich</h2>
-
-            <p>Ich habe sehr gute Deutschkenntnisse, gute Kenntnisse in Englisch und Französisch als Muttersprache.
-                Kommunikation, Kontaktfreudigkeit und Teamarbeit sind meine Stärken. Ich kann gut mit Stress umgehen
-                und bin in der Lage, Kritik anzunehmen. Ich bin bereit, neue Dinge zu lernen und ich bin zuverlässig
-                in meiner Arbeit.
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Grundinformationen</h2>
-                  <p class="address">
-                      <span>Name: Cyril Silapa Nenguem</span><br>
-                      <span>Adresse: Erzhausen<br></span>
-                      <span>Email: silapanenguemcyril@gmail.com</span>
-                  </p>
-
+         <div class="about-grid">
+            <div class="about-visual">
+               <div class="about-card glow-border">
+                  <img src="images/pp.png" alt="Cyril Silapa" class="about-img" onerror="this.style.display='none';var n=this.nextElementSibling;if(n)n.style.display='flex'">
+                  <div class="about-img-placeholder" style="display:none">
+                     <i class="fa fa-user"></i>
+                     <span>CV</span>
+                  </div>
                </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="lebenslauf.pdf" class="button" download><i class="fa fa-download"></i>Lebenslauf</a>
-                  </p>
+            </div>
+            <div class="about-content">
+               <p class="about-text" data-i18n="about.text">Ich bin Informatikstudent an der Hochschule Darmstadt und baue gerne praktische Anwendungen – vom Backend bis zur Web-Oberfläche. Besonders interessieren mich saubere APIs, Datenbanken, Deployment und Machine-Learning-Anwendungen. Ich arbeite zuverlässig, lerne schnell und fühle mich im Team wohl. Es macht mir Spaß, neue Technologien zu erkunden und meine Fähigkeiten zu erweitern.</p>
+               <div class="about-info">
+                  <div class="info-item">
+                     <i class="fa fa-user"></i>
+                     <span data-i18n="about.name">Cyril Silapa Nenguem</span>
+                  </div>
+                  <div class="info-item">
+                     <i class="fa fa-map-marker"></i>
+                     <span>Erzhausen, Deutschland</span>
+                  </div>
+                  <div class="info-item">
+                     <i class="fa fa-phone"></i>
+                     <a href="tel:+491792632026">+49 179 2632026</a>
+                  </div>
+                  <div class="info-item">
+                     <i class="fa fa-envelope"></i>
+                     <a href="mailto:silapanenguemcyril@gmail.com">silapanenguemcyril@gmail.com</a>
+                  </div>
                </div>
-            </div> <!-- end row -->
-         </div> <!-- end .main-col -->
+               <p class="about-hobbies" data-i18n="about.hobbies">Piano · Reading · Music · Programming</p>
+               <a href="lebenslauf.pdf" class="btn btn-neon btn-download" download>
+                  <i class="fa fa-download"></i>
+                  <span data-i18n="about.cv">Download CV</span>
+               </a>
+            </div>
+         </div>
       </div>
-   </section> <!-- About Section End-->
+   </section>
 
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Bildung</span></h1>
+   <!-- Education -->
+   <section id="education" class="section section-dark">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-tag" data-i18n="edu.tag">02. Education</span>
+            <h2 class="section-title" data-i18n="edu.title">Education & Training</h2>
          </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-               <div class="twelve columns">
+         <div class="timeline">
+            <div class="timeline-item reveal">
+               <div class="timeline-marker"></div>
+               <div class="timeline-content glow-border">
                   <h3>Hochschule Darmstadt</h3>
-                  <p class="info">Bachelor of Science in Informatik<span>&bull;</span> <em class="date">Oktober 2023 - Heute</em></p>
-                      Ich studiere Informatik an der Hochschule Darmstadt mit den Schwerpunkten :<br>
-                   <ul>
-                       <li>-> Gestaltung und Nutzung von Informationssystemen</li>
-                       <li>-> Entwicklung neuer, technologiebasierter Geschäftsmodelle des Internet Business</li>
-                       <li>-> IT Security: Grundfunktionen vertrauenswürdiger Systeme, Sicherheitsmanagement, Web- Datenund
-                           Netzsicherheit, Public Key- Infrastrukturen, Schadsoftware, Kryptographie</li>
-                   </ul>
+                  <p class="timeline-meta">Bachelor of Science in Informatik · 5. Fachsemester · <em data-i18n="edu.date1">Okt. 2023 – Heute</em></p>
+                  <p class="timeline-intro" data-i18n="edu.intro">Ich studiere Informatik mit Schwerpunkt auf Softwareentwicklung, Systemarchitektur und IT-Sicherheit. Das Studium verbindet theoretische Grundlagen mit praktischen Projekten.</p>
+                  <ul>
+                     <li data-i18n="edu.focus1">Informationssysteme: Gestaltung, Nutzung und Integration von Enterprise-Anwendungen</li>
+                     <li data-i18n="edu.focus3">IT-Security: Vertrauenswürdige Systeme, Kryptographie, Web- und Netzsicherheit, PKI, Maxhune Learning/li>
+                     <li data-i18n="edu.focus4">Praktische Projekte: Webanwendungen (PHP, MySQL), Backend-Services (Docker, Kubernetes, CI/CD), Mobile Apps (Flutter), C++/Qt-Systeme</li>
+                  </ul>
                </div>
             </div>
-
-             <div class="row item">
-                 <div class="twelve columns">
-                     <h3>Openclassroom , Udemy , ... </h3>
-                     <p class="info">ständige Weiterbildung<span>&bull;</span> <em class="date">April 2023 - Heute</em></p>
-                     <p>Aufgrund meiner Leidenschaft für Informatik und neue Technologien versuche ich, mir
-                         verschiedene Fähigkeiten anzueignen, um meine persönlichen Projekte zu verwirklichen.
-                         In diesem Zusammenhang lerne ich die Webentwicklung und möchte viele Großprojekte in
-                         Unternehmen realisieren.
-                     </p>
-                 </div>
-             </div>
+            <div class="timeline-item reveal">
+               <div class="timeline-marker"></div>
+               <div class="timeline-content glow-border">
+                  <h3>OpenClassrooms, Udemy & mehr</h3>
+                  <p class="timeline-meta"><span data-i18n="edu.ongoing">Kontinuierliches Selbststudium</span> · <em data-i18n="edu.date2">Apr. 2023 – Heute</em></p>
+                  <p data-i18n="edu.desc">Aus Leidenschaft für Technik erweitere ich ständig meine Fähigkeiten und realisiere persönliche sowie professionelle Projekte.</p>
+               </div>
+            </div>
          </div>
       </div>
+   </section>
 
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
+   <!-- Experience -->
+   <section id="experience" class="section">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-tag" data-i18n="exp.tag">02b. Experience</span>
+            <h2 class="section-title" data-i18n="exp.title">Professional Experience</h2>
          </div>
-
-         <div class="nine columns main-col">
-
-             <p>Was meine Sprachkenntnisse angeht, so spreche ich <b>Englisch</b>, spreche derzeit
-                 <b>sehr gut Deutsch</b> und habe <b>Französisch Muttersprache</b>.
-            </p>
-             Meine technischen Fähigkeiten sind:
-
-             <div>
-                 <ul class="skills">
-                     <li><b>HTML5 / CSS3 / Javascript / Java / C++ </b></li>
-                     <li><b>MS Office (Word , Excel, Powerpoint ...)</b></li>
-                 </ul>
-             </div>
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Portfolio (Einige Projekte zum Vorzeigen)</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/cascade.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Cascade</h5>
-                              <p>Frontend</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/todo-app.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>To Do App</h5>
-                              <p>Frontend / Javascript</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/calculator.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Calculator</h5>
-                              <p>Frontend / Javascript</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/portfolio.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Portfolio Website</h5>
-                              <p>Frontend : HTML / CSS</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                  </div>
-          		</div> <!-- item end -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/cascade.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Cascade</h4>
-			      <p>Dies ist eine einfache Webseite, die mit HTML und CSS erstellt wurde, um meine Designfähigkeiten zu entwickeln</p>
-               <span class="categories"><i class="fa fa-tag"></i>HTML/CSS Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+         <div class="timeline">
+            <div class="timeline-item reveal">
+               <div class="timeline-marker"></div>
+               <div class="timeline-content glow-border">
+                  <h3>Werkstudent – TMU PMX (DMPK)</h3>
+                  <p class="timeline-meta">Sanofi GmbH, Frankfurt am Main · <em data-i18n="exp.date1">Aug.–Okt. 2025</em></p>
+                  <ul>
+                     <li data-i18n="exp.sanofi1">PBPK-Modellierung: Aktualisierung von Arzneimittelmodellen mit neuen Expressionsprofilen</li>
+                     <li data-i18n="exp.sanofi2">Parameteridentifikation, Modellanpassung, Auswertung von PK-Parametern</li>
+                     <li data-i18n="exp.sanofi3">Automatisierte Datenaufbereitung & Visualisierung in R (RStudio, VS Code)</li>
+                     <li data-i18n="exp.sanofi4">Simulationen mit PK-Sim und MoBi · Versionsverwaltung mit Git</li>
+                  </ul>
+               </div>
             </div>
-
-	      </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/todo-app.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>To-do App</h4>
-			      <p>Dies ist eine einfache to-do List app, die mit HTML CSS und Javascript erstellt wurde, um meine Javascriptfähigkeiten zu entwickeln</p>
-               <span class="categories"><i class="fa fa-tag"></i>Frontend , Javascript , App , Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/calculator.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Judah</h4>
-                  <p>Dies ist eine einfache Calculator app, die mit HTML CSS und Javascript erstellt wurde, um meine Javascriptfähigkeiten zu entwickeln</p>
-                  <span class="categories"><i class="fa fa-tag"></i>Frontend , Javascript , App , Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/portfolio.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Portfolio</h4>
-                  <p>Dies ist eine einfache Portfolio Webseite, die mit HTML und CSS erstellt wurde, um meine Designfähigkeiten zu entwickeln</p>
-                  <span class="categories"><i class="fa fa-tag"></i>HTML/CSS Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-04 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-            <div class="twelve columns header-col">
-               <h1>I'd Love To Hear From You.</h1>
+            <div class="timeline-item reveal">
+               <div class="timeline-marker"></div>
+               <div class="timeline-content glow-border">
+                  <h3>Werkstudent IT-Support & Datenpflege</h3>
+                  <p class="timeline-meta">Sanofi GmbH, Frankfurt am Main · <em data-i18n="exp.date2">Aug.–Okt. 2024</em></p>
+                  <p data-i18n="exp.sanofi5">IT-Support und Datenpflege im internationalen Umfeld.</p>
+               </div>
             </div>
          </div>
-
-         <div class="row">
-
-            <aside class="twelve columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Kontakt</h4>
-					   <p class="address">
-                           <span>Name: Cyril Silapa Nenguem</span><br>
-                           <span>Email: silapanenguemcyril@gmail.com</span>
-					   </p>
-
-				   </div>
-            </aside>
-
       </div>
+   </section>
 
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-                <li><a href="https://github.com/Cyril-237"><i class="fa fa-github"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2024 Cyril</li>
-               <li>Design by Cyril</li>
-            </ul>
-
+   <!-- Skills -->
+   <section id="skills" class="section">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-tag" data-i18n="skills.tag">03. Skills</span>
+            <h2 class="section-title" data-i18n="skills.title">Technical & Languages</h2>
          </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+         <div class="skills-grid">
+            <div class="skill-category glow-border reveal">
+               <div class="skill-icon"><i class="fa fa-code"></i></div>
+               <h4 data-i18n="skills.tech">Technologies</h4>
+               <div class="skill-tags">
+                  <span>Python</span><span>Java</span><span>C++</span><span>C</span>
+                  <span>JavaScript</span><span>React</span><span>Flutter</span><span>PHP</span>
+                  <span>HTML/CSS</span><span>Git</span>
+               </div>
+            </div>
+            <div class="skill-category glow-border reveal">
+               <div class="skill-icon"><i class="fa fa-globe"></i></div>
+               <h4 data-i18n="skills.langs">Languages</h4>
+               <div class="skill-tags">
+                  <span>Deutsch C1 (TestDaF)</span><span>Englisch (gut)</span><span>Französisch (Muttersprache)</span>
+               </div>
+            </div>
+            <div class="skill-category glow-border reveal">
+               <div class="skill-icon"><i class="fa fa-wrench"></i></div>
+               <h4 data-i18n="skills.tools">Tools</h4>
+               <div class="skill-tags">
+                  <span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>MySQL</span>
+                  <span>FastAPI</span><span>R</span><span>Qt</span><span>VS Code</span><span>GitLab</span>
+               </div>
+            </div>
+         </div>
       </div>
+   </section>
 
-   </footer> <!-- Footer End-->
+   <!-- Portfolio -->
+   <section id="portfolio" class="section section-dark">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-tag" data-i18n="portfolio.tag">04. Portfolio</span>
+            <h2 class="section-title" data-i18n="portfolio.title">Selected Projects</h2>
+         </div>
+         <div class="portfolio-grid">
+            <article class="portfolio-card glow-border reveal">
+               <div class="portfolio-img-wrap">
+                  <div class="portfolio-img-placeholder neon-placeholder"><i class="fa fa-cutlery"></i></div>
+                  <div class="portfolio-overlay">
+                     <span class="portfolio-more" data-i18n="portfolio.view">View</span>
+                  </div>
+               </div>
+               <div class="portfolio-info">
+                  <h4>Pizzaservice Webanwendung</h4>
+                  <p>PHP · MVC · MySQL · REST API</p>
+               </div>
+               <div class="portfolio-modal" id="modal-pizza">
+                  <div class="modal-content">
+                     <div class="modal-body" style="padding: 32px;">
+                        <h4>Pizzaservice Webanwendung</h4>
+                        <p data-i18n="modal.pizza">Webbasierte Bestell- und Auftragsverwaltung in PHP nach MVC. Datenbankdesign (MySQL) für Bestellungen und Artikel, verschiedene Rollen (Kunde, Bäcker, Fahrer), Live-Status, responsive Layout, REST-artige API, Barrierefreiheit.</p>
+                        <span class="modal-tags">PHP · MVC · MySQL · REST API · Responsive · Accessibility</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article class="portfolio-card glow-border reveal">
+               <div class="portfolio-img-wrap">
+                  <div class="portfolio-img-placeholder neon-placeholder"><i class="fa fa-database"></i></div>
+                  <div class="portfolio-overlay">
+                     <span class="portfolio-more" data-i18n="portfolio.view">View</span>
+                  </div>
+               </div>
+               <div class="portfolio-info">
+                  <h4>Pizza Backend Service</h4>
+                  <p>Docker · Kubernetes · PostgreSQL · CI/CD</p>
+               </div>
+               <div class="portfolio-modal" id="modal-backend">
+                  <div class="modal-content">
+                     <div class="modal-body" style="padding: 32px;">
+                        <h4>Pizza Backend Service</h4>
+                        <p data-i18n="modal.backend">PostgreSQL-Datenbank für Order-Management, Containerisierung mit Docker, Deployment auf Kubernetes, CI/CD mit GitLab, SonarQube, Integrationstests (Pytest, Tavern), Graylog-Logging.</p>
+                        <span class="modal-tags">PostgreSQL · Docker · Kubernetes · GitLab · Pytest</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article class="portfolio-card glow-border reveal">
+               <div class="portfolio-img-wrap">
+                  <div class="portfolio-img-placeholder neon-placeholder"><i class="fa fa-map-marker"></i></div>
+                  <div class="portfolio-overlay">
+                     <span class="portfolio-more" data-i18n="portfolio.view">View</span>
+                  </div>
+               </div>
+               <div class="portfolio-info">
+                  <h4>Quietspace App</h4>
+                  <p>Flutter · Mobile · Campus</p>
+               </div>
+               <div class="portfolio-modal" id="modal-quietspace">
+                  <div class="modal-content">
+                     <div class="modal-body" style="padding: 32px;">
+                        <h4>Quietspace App</h4>
+                        <p data-i18n="modal.quietspace">Flutter-App zur schnellen Suche von Lernorten auf dem Campus. Kartenintegration, Standorterkennung, Filterfunktionen, responsives UI/UX, plattformübergreifend.</p>
+                        <span class="modal-tags">Flutter · Mobile · Maps · Cross-platform</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article class="portfolio-card glow-border reveal">
+               <div class="portfolio-img-wrap">
+                  <div class="portfolio-img-placeholder neon-placeholder"><i class="fa fa-map"></i></div>
+                  <div class="portfolio-overlay">
+                     <span class="portfolio-more" data-i18n="portfolio.view">View</span>
+                  </div>
+               </div>
+               <div class="portfolio-info">
+                  <h4>Navigationssystem</h4>
+                  <p>C++ · Qt · Dijkstra · Haversine</p>
+               </div>
+               <div class="portfolio-modal" id="modal-nav">
+                  <div class="modal-content">
+                     <div class="modal-body" style="padding: 32px;">
+                        <h4>Navigationssystem</h4>
+                        <p data-i18n="modal.nav">Entwicklung eines Navigationssystems in C++ mit Qt-GUI. Kartenverwaltung, Standorterstellung, interaktive Kartendarstellung, Entfernungsberechnung (Haversine), Routenplanung (Dijkstra), Unit-Tests.</p>
+                        <span class="modal-tags">C++ · Qt · Dijkstra · Haversine · Unit Tests</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article class="portfolio-card glow-border reveal">
+          
+               <div class="portfolio-info">
+                  <h4>Cascade</h4>
+                  <p>HTML/CSS · Web Design</p>
+               </div>
+               <div class="portfolio-modal" id="modal-01">
+                  <div class="modal-content">
+                     <img src="images/portfolio/cascade.png" alt="Cascade">
+                     <div class="modal-body">
+                        <h4>Cascade</h4>
+                        <p data-i18n="modal.cascade">A simple website built with HTML and CSS to develop my design skills.</p>
+                        <span class="modal-tags">HTML/CSS · Webdesign</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+           <article>
+               <div class="portfolio-info">
+                  <h4>To Do App</h4>
+                  <p>Frontend · JavaScript</p>
+               </div>
+               <div class="portfolio-modal" id="modal-02">
+                  <div class="modal-content">
+                     <img src="images/portfolio/todo-app.png" alt="To Do App">
+                     <div class="modal-body">
+                        <h4>To-do App</h4>
+                        <p data-i18n="modal.todo">A simple todo list app built with HTML, CSS and JavaScript to practice frontend development.</p>
+                        <span class="modal-tags">Frontend · JavaScript · Web Development</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article class="portfolio-card glow-border reveal">
+              
+               <div class="portfolio-info">
+                  <h4>Calculator</h4>
+                  <p>Frontend · JavaScript</p>
+               </div>
+               <div class="portfolio-modal" id="modal-03">
+                  <div class="modal-content">
+                     <img src="images/portfolio/calculator.png" alt="Calculator">
+                     <div class="modal-body">
+                        <h4>Calculator</h4>
+                        <p data-i18n="modal.calc">A calculator app built with HTML, CSS and JavaScript to practice my JavaScript skills.</p>
+                        <span class="modal-tags">Frontend · JavaScript · App</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article class="portfolio-card glow-border reveal">
+              
+               <div class="portfolio-info">
+                  <h4>Portfolio Website</h4>
+                  <p>HTML/CSS · Web Design</p>
+               </div>
+               <div class="portfolio-modal" id="modal-04">
+                  <div class="modal-content">
+                     <img src="images/portfolio/portfolio.png" alt="Portfolio">
+                     <div class="modal-body">
+                        <h4>Portfolio</h4>
+                        <p data-i18n="modal.portfolio">A portfolio website built with HTML and CSS to showcase my design abilities.</p>
+                        <span class="modal-tags">HTML/CSS · Webdesign</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </div>
+   </section>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <!-- Contact -->
+   <section id="contact" class="section">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-tag" data-i18n="contact.tag">05. Contact</span>
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+         </div>
+         <div class="contact-box glow-border">
+            <p class="contact-text" data-i18n="contact.text">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-info">
+               <span><i class="fa fa-user"></i> Cyril Silapa Nenguem</span>
+               <a href="tel:+491792632026"><i class="fa fa-phone"></i> +49 179 2632026</a>
+               <a href="mailto:silapanenguemcyril@gmail.com"><i class="fa fa-envelope"></i> silapanenguemcyril@gmail.com</a>
+            </div>
+            <a href="mailto:silapanenguemcyril@gmail.com" class="btn btn-neon">
+               <i class="fa fa-paper-plane"></i>
+               <span data-i18n="contact.cta">Send Email</span>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-inner">
+            <a href="https://github.com/Cyril-237" target="_blank" rel="noopener" class="footer-social"><i class="fa fa-github"></i></a>
+            <p class="footer-copy">&copy; <span id="year"></span> Cyril Silapa. <span data-i18n="footer.design">Design & Development by Cyril</span></p>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Modal Overlay -->
+   <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-container">
+         <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+         <div id="modalSlot"></div>
+      </div>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
+   <script src="js/i18n.js"></script>
+   <script src="js/neon-portfolio.js"></script>
 </body>
-
 </html>
